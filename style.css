@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /*https://webgradients.com/ for the gradient*/
+    background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.flex-container {
+    /*From lecture video on flex-containers*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#logos {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Lato-Light, sans-serif;
+    font-size: 72pt;
+    margin-bottom: 10px;
+
+}
+
+#profile-pic {
+    background: url(./assets/images/Profile-Photo.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+
+}
+
+#linkedin {
+   height: 24px;
+   width: 24px;
+   background: url('./assets/images/linkedin.svg');
+   background-size: cover;
+   margin-left: 50%;
+   text-align: center; 
+}
+
+#linkedin:hover {
+    background: url("./assets/images/linkedin-blue.svg");
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    height: 24px;
+    width: 24px;
+}
+
+#github {
+    height: 24px;
+    width: 24px;
+    background: url('./assets/images/github.svg');
+    background-size: cover;
+    margin-left: 50%;
+    text-align: center; 
+ }
+ 
+ #github:hover {
+     background: url("./assets/images/github-grey.svg");
+     transition-timing-function: ease;
+     transition-duration: 1s;
+     height: 24px;
+     width: 24px;
+ }
+
+
